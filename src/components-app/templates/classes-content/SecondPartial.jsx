@@ -23,13 +23,13 @@ import Clase7 from "./second-partial-clases/Clase7";
 
 
 const faker = [
-  { fileName: "Clase 1", size: "0 MB", path: "portafolio/first-partial", id: 1 },
-  { fileName: "Clase 2", size: "0 MB", path: "portafolio/second-partial", id: 2 },
-  { fileName: "Clase 3", size: "0 MB", path: "portafolio/final-exam", id: 3 },
-  { fileName: "Clase 4", size: "0 MB", path: "portafolio/final-exam", id: 4 },
-  { fileName: "Clase 5", size: "0 MB", path: "portafolio/final-exam", id: 5 },
-  { fileName: "Clase 6", size: "0 MB", path: "portafolio/final-exam", id: 6 },
-  { fileName: "Clase 7", size: "0 MB", path: "portafolio/final-exam", id: 7 },
+  { fileName: "Clase 1", size: "16 MB", path: "portafolio/first-partial", id: 1 },
+  { fileName: "Clase 2", size: "10 MB", path: "portafolio/second-partial", id: 2 },
+  { fileName: "Clase 3", size: "15 MB", path: "portafolio/final-exam", id: 3 },
+  { fileName: "Clase 4", size: "11 MB", path: "portafolio/final-exam", id: 4 },
+  { fileName: "Clase 5", size: "10 MB", path: "portafolio/final-exam", id: 5 },
+  { fileName: "Clase 6", size: "9 MB", path: "portafolio/final-exam", id: 6 },
+  { fileName: "Clase 7", size: "14 MB", path: "portafolio/final-exam", id: 7 },
 ];
 
 const SecondPartial = () => {

@@ -21,11 +21,11 @@ import Clase4 from "./exam-final-clases/Clase4";
 import Clase5 from "./exam-final-clases/Clase5";
 
 const faker = [
-  { fileName: "Clase 1", size: "0 MB", path: 'portafolio/first-partial', id: 1 },
-  { fileName: "Clase 2", size: "0 MB", path: 'portafolio/second-partial', id: 2 },
-  { fileName: "Clase 3", size: "0 MB", path: 'portafolio/final-exam', id: 3 },
-  { fileName: "Clase 4", size: "0 MB", path: 'portafolio/final-exam', id: 4 },
-  { fileName: "Clase 5", size: "0 MB", path: 'portafolio/final-exam', id: 5 },
+  { fileName: "Clase 1", size: "10 MB", path: 'portafolio/first-partial', id: 1 },
+  { fileName: "Clase 2", size: "14 MB", path: 'portafolio/second-partial', id: 2 },
+  { fileName: "Clase 3", size: "12 MB", path: 'portafolio/final-exam', id: 3 },
+  { fileName: "Clase 4", size: "16 MB", path: 'portafolio/final-exam', id: 4 },
+  { fileName: "Clase 5", size: "21 MB", path: 'portafolio/final-exam', id: 5 },
 ];
 
 const FinalExam = () => {

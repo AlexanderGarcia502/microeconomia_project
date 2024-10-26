@@ -15,9 +15,9 @@ import DeleteModal from "../../components-app/organisms/DeleteModal";
 import { useNavigate } from "react-router-dom";
 
 const faker = [
-  { fileName: "Primer Parcial", size: "0 MB", path: "first-partial" },
-  { fileName: "Segundo Parcial", size: "0 MB", path: 'second-partial' },
-  { fileName: "Examen Final", size: "0 MB", path: 'final-exam'  },
+  { fileName: "Primer Parcial", size: "3 MB", path: "first-partial" },
+  { fileName: "Segundo Parcial", size: "3 MB", path: 'second-partial' },
+  { fileName: "Examen Final", size: "4 MB", path: 'final-exam'  },
 ];
 
 
