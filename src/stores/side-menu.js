@@ -6,12 +6,12 @@ const sideMenu = atom({
     menu: [
       {
         icon: "Folder",
-        pathname: "/",
+        pathname: "microeconomia_project/",
         title: "Cursos",
       },
       {
         icon: "BookOpen",
-        pathname: "/glossaries",
+        pathname: "microeconomia_project/glossaries",
         title: "Glosario",
       },
     ],

@@ -17,40 +17,40 @@ import FinalExamDictionary from "../components-app/templates/dictionaries/FinalE
 function Router() {
   const routes = [
     {
-      path: "/",
+      path: "microeconomia_project/",
       element: <SideMenu />,
       children: [
         {
-          path: "/",
+          path: "microeconomia_project/",
           element: <Page1 />,
         },
         {
-          path: "portafolio/first-partial",
+          path: "microeconomia_project/portafolio/first-partial",
           element: <FirstPartial />,
         },
         {
-          path: "portafolio/second-partial",
+          path: "microeconomia_project/portafolio/second-partial",
           element: <SecondPartial />,
         },
         {
-          path: "portafolio/final-exam",
+          path: "microeconomia_project/portafolio/final-exam",
           element: <FinalExam />,
         },
 
         {
-          path: "/glossaries",
+          path: "microeconomia_project/glossaries",
           element: <Page2 />,
         },
         {
-          path: "/glossaries/first-partial",
+          path: "microeconomia_project/glossaries/first-partial",
           element: <FirstPartialDictionary />,
         },
         {
-          path: "/glossaries/second-partial",
+          path: "microeconomia_project/glossaries/second-partial",
           element: <SecondPartialDictionary />,
         },
         {
-          path: "/glossaries/final-exam",
+          path: "microeconomia_project/glossaries/final-exam",
           element: <FinalExamDictionary />,
         },
       ],
