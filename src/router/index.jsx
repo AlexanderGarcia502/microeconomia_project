@@ -65,15 +65,12 @@ function Router() {
     },
     {
       path: "*",
-      element: <Error404 />,
+      element: <Page1 />,
     },
   ];
 
-  return (
-    <BrowserRouter basename="/microeconomia_project">
-      {useRoutes(routes)}
-    </BrowserRouter>
-  );
+  return useRoutes(routes)
+  
 }
 
 export default Router;
