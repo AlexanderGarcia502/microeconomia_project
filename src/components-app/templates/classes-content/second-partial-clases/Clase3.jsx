@@ -32,7 +32,7 @@ const Clase3 = ({
               <img
                 alt="Midone Tailwind HTML Admin Template"
                 src={
-                  "https://www.core-econ.org/the-economy/v1/book/es/images/web/figure-07-06-01-02.jpg"
+                  "https://retos-directivos.eae.es/wp-content/uploads/2015/04/calcular-utilidad-marginal.jpg"
                 }
                 data-action="zoom"
                 className="w-full rounded-md"
@@ -223,6 +223,14 @@ const Clase3 = ({
               en el análisis de la conducta del consumidor.
             </p>
             <br />
+            <br />
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              COMENTARIO PERSONAL
+            </h3>
+            <br />
+            <p className="mb-5">
+           <b> Las curvas de indiferencia me fascinan porque ilustran visualmente cómo las personas toman decisiones económicas sin sacrificar la satisfacción. La idea de poder cambiar entre diferentes combinaciones de bienes y mantener el mismo nivel de utilidad es, en cierto modo, una metáfora de la vida misma: siempre estamos buscando equilibrio, ajustando nuestras elecciones para optimizar el bienestar. Me gusta cómo representan la flexibilidad y el compromiso en nuestras decisiones diarias, reflejando que no existe una única forma de alcanzar la felicidad o el equilibrio.</b>
+            </p>
           </div>
         </ModalBody>
       </Modal>
