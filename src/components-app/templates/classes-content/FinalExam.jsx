@@ -14,7 +14,11 @@ import SuccessNotify from "../../organisms/SuccessNotify";
 import DeleteModal from "../../organisms/DeleteModal";
 import ModalForm from "../../Molecules/modal-form/ModalForm";
 import useForm from "../../../hooks/useForm";
-import Clase1 from "./first-partial-clases/Clase1";
+import Clase1 from "./exam-final-clases/Clase1";
+import Clase2 from "./exam-final-clases/Clase2";
+import Clase3 from "./exam-final-clases/Clase3";
+import Clase4 from "./exam-final-clases/Clase4";
+import Clase5 from "./exam-final-clases/Clase5";
 
 const faker = [
   { fileName: "Clase 1", size: "0 MB", path: 'portafolio/first-partial', id: 1 },
@@ -34,7 +38,7 @@ const FinalExam = () => {
   const [openModal, setOpenModal] = useState(false)
   const [classNum, setClassNum] = useState('')
   const [isDownload, setIsDownload] = useState(false)
-
+  const [classSelected, setClassSelected] = useState('')
 
   const { values, handleInputChange, setValues, reset } = useForm({
     course: "",
@@ -175,6 +179,7 @@ const FinalExam = () => {
                     <div className="file box rounded-md px-5 pt-8 pb-5 px-3 sm:px-5 relative zoom-in">
                     <a
                       onClick={() => {
+                        setClassSelected(file.id)
                         setClassNum(file.fileName)
                         setOpenModal(true)
                       }}
@@ -249,7 +254,7 @@ const FinalExam = () => {
           )}
         </div>
       </div>
-      <Clase1
+      {openModal === true && classSelected === 1 && <Clase1
         open={openModal}
         onClose={() => setOpenModal(false)}
         classNum={classNum}
@@ -258,7 +263,48 @@ const FinalExam = () => {
           setIsDownload(true)
           successNotificationToggle();
         }}
-      />
+      />}
+
+      {openModal === true && classSelected === 2 && <Clase2
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        classNum={classNum}
+        onDownload={() => {
+          downloadPDF();
+          setIsDownload(true)
+          successNotificationToggle();
+        }}
+      />}
+      {openModal === true && classSelected === 3 && <Clase3
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        classNum={classNum}
+        onDownload={() => {
+          downloadPDF();
+          setIsDownload(true)
+          successNotificationToggle();
+        }}
+      />}
+      {openModal === true && classSelected === 4 && <Clase4
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        classNum={classNum}
+        onDownload={() => {
+          downloadPDF();
+          setIsDownload(true)
+          successNotificationToggle();
+        }}
+      />}
+      {openModal === true && classSelected === 5 && <Clase5
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        classNum={classNum}
+        onDownload={() => {
+          downloadPDF();
+          setIsDownload(true)
+          successNotificationToggle();
+        }}
+      />}
       {/* END: Page Layout */}
     </>
   );

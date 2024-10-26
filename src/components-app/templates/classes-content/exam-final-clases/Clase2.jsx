@@ -2,143 +2,114 @@ import { Modal, ModalBody } from "@/base-components";
 import { faker as $f } from "@/utils";
 import { Lucide } from "@/base-components";
 
-const Clase2 = ({ classNum, open, onClose = () => {}, onDownload = () => {} }) => {
+const Clase2 = ({
+  classNum,
+  open,
+  onClose = () => {},
+  onDownload = () => {},
+}) => {
   return (
     <>
       {/* BEGIN: Super Large Modal Content */}
       <Modal size="modal-xl" show={open} onHidden={onClose}>
-        <ModalBody className="p-10 text-center">
+        <ModalBody className="p-10 text-left">
           <div className="leading-relaxed">
             <div
               style={{ width: "100%", display: "flex", justifyContent: "end" }}
             >
               <h5 className="text-lg text-warning font-medium leading-none font-bold">
-                { classNum }
-                <button className="btn btn-warning w-32 mr-2 mb-2 ml-3" onClick={onDownload}>
+                {classNum}
+                <button
+                  className="btn btn-warning w-32 mr-2 mb-2 ml-3"
+                  onClick={onDownload}
+                >
                   <Lucide icon="Download" className="w-4 h-4 mr-2" /> Descargar
                 </button>
               </h5>
             </div>
+
             <h3 className="text-2xl font-medium leading-none mt-3">
-              Lorem ipsum
+              LEY DE RENDIMIENTOS DECRECIENTES
             </h3>
             <br />
-            <p className="mb-5">
-              Trust fund seitan chia, wolf lomo letterpress Bushwick before they
-              sold out. Carles kogi fixie, squid twee Tonx readymade cred
-              typewriter scenester locavore kale chips vegan organic. Meggings
-              pug wolf Shoreditch typewriter skateboard. McSweeney's iPhone
-              chillwave, food truck direct trade disrupt flannel irony tousled
-              Cosby sweater single-origin coffee. Organic disrupt bicycle
-              rights, tattooed messenger bag flannel craft beer fashion axe
-              bitters. Readymade sartorial craft beer, quinoa sustainable
-              butcher Marfa Echo Park Terry Richardson gluten-free flannel retro
-              cred mlkshk banjo. Salvia 90's art party Blue Bottle, PBR&amp;B
-              cardigan 8-bit.
-            </p>
-            <p className="mb-5">
-              Meggings irony fashion axe, tattooed master cleanse Blue Bottle
-              stumptown bitters authentic flannel freegan paleo letterpress ugh
-              sriracha. Wolf PBR&amp;B art party aesthetic meh cliche. Sartorial
-              before they sold out deep v, aesthetic PBR&amp;B craft beer
-              post-ironic synth keytar pork belly skateboard pour-over. Tonx
-              cray pug Etsy, gastropub ennui wolf ethnic Odd Future viral master
-              cleanse skateboard banjo. Pitchfork scenester cornhole, whatever
-              try-hard ethnic banjo +1 gastropub American Apparel vinyl
-              skateboard Shoreditch seitan. Blue Bottle keffiyeh Austin
-              Helvetica art party. Portland ethnic fixie, beard retro direct
-              trade ugh scenester Tumblr readymade authentic plaid pickled
-              hashtag biodiesel.
-            </p>
-            <div className="w-full h-64 my-5 image-fit">
-              <img
-                alt="Midone Tailwind HTML Admin Template"
-                src={$f()[0].images[4]}
-                data-action="zoom"
-                className="w-full rounded-md"
-              />
-            </div>
-            <p className="mb-5">
-              Thundercats freegan Truffaut, four loko twee Austin scenester
-              lo-fi seitan High Life paleo quinoa cray. Schlitz butcher ethical
-              Tumblr, pop-up DIY keytar ethnic iPhone PBR sriracha. Tonx direct
-              trade bicycle rights gluten-free flexitarian asymmetrical.
-              Whatever drinking vinegar PBR XOXO Bushwick gentrify. Cliche
-              semiotics banjo retro squid Wes Anderson. Fashion axe dreamcatcher
-              you probably haven't heard of them bicycle rights. Tote bag
-              organic four loko ethical selfies gastropub, PBR fingerstache
-              tattooed bicycle rights.
-            </p>
-            <p className="mb-5">
-              Ugh Portland Austin, distillery tattooed typewriter polaroid pug
-              Banksy Neutra keffiyeh. Shoreditch mixtape wolf PBR&amp;B, tote
-              bag dreamcatcher literally bespoke Odd Future selfies 90's master
-              cleanse vegan. Flannel tofu deep v next level pickled, authentic
-              Etsy Shoreditch literally swag photo booth iPhone pug semiotics
-              banjo. Bicycle rights butcher Blue Bottle, actually DIY semiotics
-              Banksy banjo mixtape Austin pork belly post-ironic. American
-              Apparel gastropub hashtag, McSweeney's master cleanse occupy High
-              Life bitters wayfarers next level bicycle rights. Wolf chia Terry
-              Richardson, pop-up plaid kitsch ugh. Butcher +1 Carles, swag
-              selfies Blue Bottle viral.
-            </p>
-            <p className="mb-5">
-              Keffiyeh food truck organic letterpress leggings iPhone four loko
-              hella pour-over occupy, Wes Anderson cray post-ironic. Neutra
-              retro fixie gastropub +1, High Life semiotics. Vinyl distillery
-              Etsy freegan flexitarian cliche jean shorts, Schlitz wayfarers
-              skateboard tousled irony locavore XOXO meh. Ethnic Wes Anderson
-              McSweeney's messenger bag, mixtape XOXO slow-carb cornhole
-              aesthetic Marfa banjo Thundercats bitters. Raw denim banjo
-              typewriter cray Tumblr, High Life single-origin coffee. 90's
-              Tumblr cred, Terry Richardson occupy raw denim tofu fashion axe
-              photo booth banh mi. Trust fund locavore Helvetica, fashion axe
-              selvage authentic Shoreditch swag selfies stumptown +1.
-            </p>
             <div className="w-3/5 h-64 mr-6 float-left image-fit">
               <img
                 alt="Midone Tailwind HTML Admin Template"
-                src={$f()[0].images[3]}
+                src={
+                  "https://pmcollege.edu.ni/wp-content/uploads/2021/12/Retornos-Decrecientes1.jpg"
+                }
+                data-action="zoom"
+                className="w-full rounded-md"
+              />
+            </div>
+            <br />
+            <br />
+            <p className="mb-5">
+              La Ley de Rendimientos Decrecientes, también conocida como Ley de
+              Rendimientos Marginales Decrecientes, es un principio económico
+              que describe el comportamiento de la producción a medida que se
+              añaden más unidades de un insumo variable, manteniendo constantes
+              los otros insumos. Esta ley establece que, después de un cierto
+              punto, el aumento de la cantidad de insumo variable utilizado en
+              el proceso de producción resultará en incrementos menores en el
+              producto total.
+            </p>
+
+            <br />
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              Etapas de la Ley de Rendimientos Decrecientes
+            </h3>
+            <br />
+
+            <p className="mb-5">
+              <b>Etapa de Rendimientos Crecientes: </b> En esta fase inicial, al
+              aumentar el insumo variable, el producto total y el producto
+              marginal también aumentan. La producción es más eficiente debido a
+              la mejor utilización de los insumos.
+            </p>
+            <p className="mb-5">
+              <b>Etapa de Rendimientos Decrecientes: </b> Aquí, el producto
+              marginal comienza a disminuir. Esto significa que cada unidad
+              adicional del insumo variable contribuye menos al aumento del
+              producto total. Aunque el producto total sigue creciendo, lo hace
+              a un ritmo más lento.
+            </p>
+            <p className="mb-5">
+              <b>Etapa de Rendimientos Negativos: </b> Si se sigue aumentando el
+              insumo variable, eventualmente el producto marginal puede volverse
+              negativo, lo que indica que el uso excesivo del insumo variable
+              está reduciendo el producto total.
+            </p>
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              Implicaciones
+            </h3>
+            <div className="w-full h-64 my-5 image-fit">
+              <img
+                alt="Midone Tailwind HTML Admin Template"
+                src={
+                  "https://i.ytimg.com/vi/FsCWUaEWRjs/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC3AOKAgwIABABGGUgZShlMA8=&rs=AOn4CLCbhZPVCPYr19MSwD3vntAiT4x9Mg"
+                }
                 data-action="zoom"
                 className="w-full rounded-md"
               />
             </div>
             <p className="mb-5">
-              Scenester chambray slow-carb, trust fund biodiesel ugh bicycle
-              rights cornhole. Gentrify messenger bag Truffaut tousled roof
-              party pork belly leggings, photo booth jean shorts. Austin
-              readymade PBR plaid chambray. Squid Echo Park pour-over, wayfarers
-              forage whatever locavore typewriter artisan deep v four loko.
-              Locavore occupy Neutra Pitchfork McSweeney's, wayfarers
-              fingerstache. Actually asymmetrical drinking vinegar yr brunch
-              biodiesel. Before they sold out sustainable readymade craft beer
-              Portland gastropub squid Austin, roof party Thundercats chambray
-              narwhal Bushwick pug.
+              <b>Decisiones de Producción: </b>
+              La Ley de Rendimientos Decrecientes es fundamental para las
+              empresas al tomar decisiones sobre la cantidad de insumos a
+              utilizar. Conocer en qué punto los rendimientos comienzan a
+              decrecer les ayuda a optimizar la producción y a evitar costos
+              innecesarios.
             </p>
             <p className="mb-5">
-              Literally typewriter chillwave, bicycle rights Carles flannel
-              wayfarers. Biodiesel farm-to-table actually, locavore keffiyeh
-              hella shabby chic pour-over try-hard Bushwick. Sriracha American
-              Apparel Brooklyn, synth cray stumptown blog Bushwick +1 VHS
-              hashtag. Wolf umami Carles Marfa, 90's food truck Cosby sweater.
-              Fanny pack try-hard keytar pop-up readymade, master cleanse four
-              loko trust fund polaroid salvia. Photo booth kitsch forage
-              chambray, Carles scenester slow-carb lomo cardigan dreamcatcher.
-              Swag asymmetrical leggings, biodiesel Tonx shabby chic ethnic
-              master cleanse freegan.
+              <b>Costos de Producción: </b>A medida que el producto marginal
+              disminuye, el costo por unidad de producción puede aumentar, lo
+              que puede afectar la rentabilidad.
             </p>
-            <p>
-              Raw denim Banksy shabby chic, 8-bit salvia narwhal fashion axe.
-              Ethical Williamsburg four loko, chia kale chips distillery
-              Shoreditch messenger bag swag iPhone Pitchfork. Viral PBR&amp;B
-              single-origin coffee quinoa readymade, ethical chillwave drinking
-              vinegar gluten-free Wes Anderson kitsch Tumblr synth actually
-              bitters. Butcher McSweeney's forage mlkshk kogi fingerstache.
-              Selvage scenester butcher Shoreditch, Carles beard plaid disrupt
-              DIY. Pug readymade selvage retro, Austin salvia vinyl master
-              cleanse flexitarian deep v bicycle rights plaid Terry Richardson
-              mlkshk pour-over. Trust fund try-hard banh mi Brooklyn, 90's Etsy
-              kogi YOLO salvia.
+            <p className="mb-5">
+              <b>Estrategia Empresarial: </b> Las empresas deben encontrar un
+              equilibrio entre la cantidad de insumos utilizados y la eficiencia
+              de producción para maximizar sus beneficios.
             </p>
           </div>
         </ModalBody>

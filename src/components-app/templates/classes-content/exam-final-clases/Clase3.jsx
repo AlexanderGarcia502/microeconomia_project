@@ -2,143 +2,99 @@ import { Modal, ModalBody } from "@/base-components";
 import { faker as $f } from "@/utils";
 import { Lucide } from "@/base-components";
 
-const Clase3 = ({ classNum, open, onClose = () => {}, onDownload = () => {} }) => {
+const Clase3 = ({
+  classNum,
+  open,
+  onClose = () => {},
+  onDownload = () => {},
+}) => {
   return (
     <>
       {/* BEGIN: Super Large Modal Content */}
       <Modal size="modal-xl" show={open} onHidden={onClose}>
-        <ModalBody className="p-10 text-center">
+        <ModalBody className="p-10 text-left">
           <div className="leading-relaxed">
             <div
               style={{ width: "100%", display: "flex", justifyContent: "end" }}
             >
               <h5 className="text-lg text-warning font-medium leading-none font-bold">
-                { classNum }
-                <button className="btn btn-warning w-32 mr-2 mb-2 ml-3" onClick={onDownload}>
+                {classNum}
+                <button
+                  className="btn btn-warning w-32 mr-2 mb-2 ml-3"
+                  onClick={onDownload}
+                >
                   <Lucide icon="Download" className="w-4 h-4 mr-2" /> Descargar
                 </button>
               </h5>
             </div>
+
             <h3 className="text-2xl font-medium leading-none mt-3">
-              Lorem ipsum
+              CONCEPTO DE COSTOS DE PRODUCCION
             </h3>
             <br />
             <p className="mb-5">
-              Trust fund seitan chia, wolf lomo letterpress Bushwick before they
-              sold out. Carles kogi fixie, squid twee Tonx readymade cred
-              typewriter scenester locavore kale chips vegan organic. Meggings
-              pug wolf Shoreditch typewriter skateboard. McSweeney's iPhone
-              chillwave, food truck direct trade disrupt flannel irony tousled
-              Cosby sweater single-origin coffee. Organic disrupt bicycle
-              rights, tattooed messenger bag flannel craft beer fashion axe
-              bitters. Readymade sartorial craft beer, quinoa sustainable
-              butcher Marfa Echo Park Terry Richardson gluten-free flannel retro
-              cred mlkshk banjo. Salvia 90's art party Blue Bottle, PBR&amp;B
-              cardigan 8-bit.
-            </p>
-            <p className="mb-5">
-              Meggings irony fashion axe, tattooed master cleanse Blue Bottle
-              stumptown bitters authentic flannel freegan paleo letterpress ugh
-              sriracha. Wolf PBR&amp;B art party aesthetic meh cliche. Sartorial
-              before they sold out deep v, aesthetic PBR&amp;B craft beer
-              post-ironic synth keytar pork belly skateboard pour-over. Tonx
-              cray pug Etsy, gastropub ennui wolf ethnic Odd Future viral master
-              cleanse skateboard banjo. Pitchfork scenester cornhole, whatever
-              try-hard ethnic banjo +1 gastropub American Apparel vinyl
-              skateboard Shoreditch seitan. Blue Bottle keffiyeh Austin
-              Helvetica art party. Portland ethnic fixie, beard retro direct
-              trade ugh scenester Tumblr readymade authentic plaid pickled
-              hashtag biodiesel.
+              Los costos de producción son todos los gastos asociados con la
+              fabricación de bienes y servicios. Estos costos son fundamentales
+              para las empresas, ya que influyen en el precio de venta, la
+              rentabilidad y la toma de decisiones estratégicas. Se pueden
+              clasificar en varias categorías, según su naturaleza y función.
             </p>
             <div className="w-full h-64 my-5 image-fit">
               <img
                 alt="Midone Tailwind HTML Admin Template"
-                src={$f()[0].images[4]}
+                src={
+                  "https://concepto.de/wp-content/uploads/2019/10/costos-de-produccion-otros-costos-distribucion-e1571607937488.jpg"
+                }
                 data-action="zoom"
                 className="w-full rounded-md"
               />
             </div>
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              Tipos de Costos de Producción
+            </h3>
+            <br />
+
             <p className="mb-5">
-              Thundercats freegan Truffaut, four loko twee Austin scenester
-              lo-fi seitan High Life paleo quinoa cray. Schlitz butcher ethical
-              Tumblr, pop-up DIY keytar ethnic iPhone PBR sriracha. Tonx direct
-              trade bicycle rights gluten-free flexitarian asymmetrical.
-              Whatever drinking vinegar PBR XOXO Bushwick gentrify. Cliche
-              semiotics banjo retro squid Wes Anderson. Fashion axe dreamcatcher
-              you probably haven't heard of them bicycle rights. Tote bag
-              organic four loko ethical selfies gastropub, PBR fingerstache
-              tattooed bicycle rights.
+              <b>Costos Fijos: </b> Son aquellos que no cambian con el nivel de
+              producción. Independientemente de la cantidad producida, estos
+              costos deben ser cubiertos. <br />
+              Ejemplos: alquiler de instalaciones, sueldos de empleados
+              administrativos, seguros.
             </p>
             <p className="mb-5">
-              Ugh Portland Austin, distillery tattooed typewriter polaroid pug
-              Banksy Neutra keffiyeh. Shoreditch mixtape wolf PBR&amp;B, tote
-              bag dreamcatcher literally bespoke Odd Future selfies 90's master
-              cleanse vegan. Flannel tofu deep v next level pickled, authentic
-              Etsy Shoreditch literally swag photo booth iPhone pug semiotics
-              banjo. Bicycle rights butcher Blue Bottle, actually DIY semiotics
-              Banksy banjo mixtape Austin pork belly post-ironic. American
-              Apparel gastropub hashtag, McSweeney's master cleanse occupy High
-              Life bitters wayfarers next level bicycle rights. Wolf chia Terry
-              Richardson, pop-up plaid kitsch ugh. Butcher +1 Carles, swag
-              selfies Blue Bottle viral.
+              <b>Costos Variables: </b> Estos costos varían directamente con el
+              volumen de producción. A medida que se produce más, estos costos
+              aumentan. <br />
+              Ejemplos: materias primas, salarios de trabajadores de producción,
+              costos de energía.
             </p>
             <p className="mb-5">
-              Keffiyeh food truck organic letterpress leggings iPhone four loko
-              hella pour-over occupy, Wes Anderson cray post-ironic. Neutra
-              retro fixie gastropub +1, High Life semiotics. Vinyl distillery
-              Etsy freegan flexitarian cliche jean shorts, Schlitz wayfarers
-              skateboard tousled irony locavore XOXO meh. Ethnic Wes Anderson
-              McSweeney's messenger bag, mixtape XOXO slow-carb cornhole
-              aesthetic Marfa banjo Thundercats bitters. Raw denim banjo
-              typewriter cray Tumblr, High Life single-origin coffee. 90's
-              Tumblr cred, Terry Richardson occupy raw denim tofu fashion axe
-              photo booth banh mi. Trust fund locavore Helvetica, fashion axe
-              selvage authentic Shoreditch swag selfies stumptown +1.
-            </p>
-            <div className="w-3/5 h-64 mr-6 float-left image-fit">
-              <img
-                alt="Midone Tailwind HTML Admin Template"
-                src={$f()[0].images[3]}
-                data-action="zoom"
-                className="w-full rounded-md"
-              />
-            </div>
-            <p className="mb-5">
-              Scenester chambray slow-carb, trust fund biodiesel ugh bicycle
-              rights cornhole. Gentrify messenger bag Truffaut tousled roof
-              party pork belly leggings, photo booth jean shorts. Austin
-              readymade PBR plaid chambray. Squid Echo Park pour-over, wayfarers
-              forage whatever locavore typewriter artisan deep v four loko.
-              Locavore occupy Neutra Pitchfork McSweeney's, wayfarers
-              fingerstache. Actually asymmetrical drinking vinegar yr brunch
-              biodiesel. Before they sold out sustainable readymade craft beer
-              Portland gastropub squid Austin, roof party Thundercats chambray
-              narwhal Bushwick pug.
+              <b>Costos Semivariables: </b> Tienen componentes fijos y
+              variables. Incluyen costos que son constantes hasta un cierto
+              nivel de producción y luego se vuelven variables. <br />
+              Ejemplos: costos de mantenimiento que son fijos hasta un nivel de
+              producción, y luego aumentan.
             </p>
             <p className="mb-5">
-              Literally typewriter chillwave, bicycle rights Carles flannel
-              wayfarers. Biodiesel farm-to-table actually, locavore keffiyeh
-              hella shabby chic pour-over try-hard Bushwick. Sriracha American
-              Apparel Brooklyn, synth cray stumptown blog Bushwick +1 VHS
-              hashtag. Wolf umami Carles Marfa, 90's food truck Cosby sweater.
-              Fanny pack try-hard keytar pop-up readymade, master cleanse four
-              loko trust fund polaroid salvia. Photo booth kitsch forage
-              chambray, Carles scenester slow-carb lomo cardigan dreamcatcher.
-              Swag asymmetrical leggings, biodiesel Tonx shabby chic ethnic
-              master cleanse freegan.
+              <b>Costos Directos: </b> Se pueden atribuir directamente a la
+              producción de un bien o servicio específico. Esto incluye los
+              costos de materiales directos y mano de obra directa. <br />
+              Ejemplo: el costo de los materiales utilizados para fabricar un
+              producto.
             </p>
-            <p>
-              Raw denim Banksy shabby chic, 8-bit salvia narwhal fashion axe.
-              Ethical Williamsburg four loko, chia kale chips distillery
-              Shoreditch messenger bag swag iPhone Pitchfork. Viral PBR&amp;B
-              single-origin coffee quinoa readymade, ethical chillwave drinking
-              vinegar gluten-free Wes Anderson kitsch Tumblr synth actually
-              bitters. Butcher McSweeney's forage mlkshk kogi fingerstache.
-              Selvage scenester butcher Shoreditch, Carles beard plaid disrupt
-              DIY. Pug readymade selvage retro, Austin salvia vinyl master
-              cleanse flexitarian deep v bicycle rights plaid Terry Richardson
-              mlkshk pour-over. Trust fund try-hard banh mi Brooklyn, 90's Etsy
-              kogi YOLO salvia.
+            <p className="mb-5">
+              <b>Costos Indirectos: </b> No se pueden asignar directamente a un
+              producto específico y generalmente se distribuyen entre varios
+              productos. <br />
+              Ejemplos: costos de administración, costos de mantenimiento de
+              maquinaria.
+            </p>
+            <p className="mb-5">
+              El concepto de costos de producción es esencial en el ámbito
+              empresarial, ya que impacta todos los aspectos de la operación,
+              desde la fijación de precios hasta la rentabilidad. Las empresas
+              deben gestionar y analizar estos costos de manera efectiva para
+              mantenerse competitivas y sostenibles en el mercado.
             </p>
           </div>
         </ModalBody>
