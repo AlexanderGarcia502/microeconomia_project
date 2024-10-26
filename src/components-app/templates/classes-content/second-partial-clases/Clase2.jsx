@@ -2,144 +2,207 @@ import { Modal, ModalBody } from "@/base-components";
 import { faker as $f } from "@/utils";
 import { Lucide } from "@/base-components";
 
-const Clase2 = ({ classNum, open, onClose = () => {}, onDownload = () => {} }) => {
+const Clase2 = ({
+  classNum,
+  open,
+  onClose = () => {},
+  onDownload = () => {},
+}) => {
   return (
     <>
       {/* BEGIN: Super Large Modal Content */}
       <Modal size="modal-xl" show={open} onHidden={onClose}>
-        <ModalBody className="p-10 text-center">
+        <ModalBody className="p-10 text-left">
           <div className="leading-relaxed">
             <div
               style={{ width: "100%", display: "flex", justifyContent: "end" }}
             >
               <h5 className="text-lg text-warning font-medium leading-none font-bold">
-                { classNum }
-                <button className="btn btn-warning w-32 mr-2 mb-2 ml-3" onClick={onDownload}>
+                {classNum}
+                <button
+                  className="btn btn-warning w-32 mr-2 mb-2 ml-3"
+                  onClick={onDownload}
+                >
                   <Lucide icon="Download" className="w-4 h-4 mr-2" /> Descargar
                 </button>
               </h5>
             </div>
             <h3 className="text-2xl font-medium leading-none mt-3">
-              Lorem ipsum
+              MEDICIÓN DE LA UTILIDAD MARGINAL
             </h3>
             <br />
             <p className="mb-5">
-              Trust fund seitan chia, wolf lomo letterpress Bushwick before they
-              sold out. Carles kogi fixie, squid twee Tonx readymade cred
-              typewriter scenester locavore kale chips vegan organic. Meggings
-              pug wolf Shoreditch typewriter skateboard. McSweeney's iPhone
-              chillwave, food truck direct trade disrupt flannel irony tousled
-              Cosby sweater single-origin coffee. Organic disrupt bicycle
-              rights, tattooed messenger bag flannel craft beer fashion axe
-              bitters. Readymade sartorial craft beer, quinoa sustainable
-              butcher Marfa Echo Park Terry Richardson gluten-free flannel retro
-              cred mlkshk banjo. Salvia 90's art party Blue Bottle, PBR&amp;B
-              cardigan 8-bit.
+              La medición de la utilidad marginal se refiere al proceso de
+              cuantificar la satisfacción adicional que un consumidor obtiene al
+              consumir una unidad adicional de un bien o servicio. Esta medición
+              es esencial para entender el comportamiento del consumidor y cómo
+              toman decisiones de compra en función de la utilidad que esperan
+              recibir. Aquí se detallan los métodos y enfoques más comunes para
+              medir la utilidad marginal.
+            </p>
+            
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              Enfoque de Utilidad Ordinal
+            </h3>
+            <br />
+            
+            <p className="mb-5">
+              La teoría de la utilidad ordinal sugiere que los consumidores
+              pueden clasificar sus preferencias en orden de satisfacción, pero
+              no pueden medir la utilidad en términos absolutos. Esto implica
+              que, aunque los consumidores pueden decir que prefieren un bien a
+              otro, no pueden cuantificar cuánta más satisfacción obtienen de
+              uno en comparación con el otro.
             </p>
             <p className="mb-5">
-              Meggings irony fashion axe, tattooed master cleanse Blue Bottle
-              stumptown bitters authentic flannel freegan paleo letterpress ugh
-              sriracha. Wolf PBR&amp;B art party aesthetic meh cliche. Sartorial
-              before they sold out deep v, aesthetic PBR&amp;B craft beer
-              post-ironic synth keytar pork belly skateboard pour-over. Tonx
-              cray pug Etsy, gastropub ennui wolf ethnic Odd Future viral master
-              cleanse skateboard banjo. Pitchfork scenester cornhole, whatever
-              try-hard ethnic banjo +1 gastropub American Apparel vinyl
-              skateboard Shoreditch seitan. Blue Bottle keffiyeh Austin
-              Helvetica art party. Portland ethnic fixie, beard retro direct
-              trade ugh scenester Tumblr readymade authentic plaid pickled
-              hashtag biodiesel.
+              <b>Clasificación de Preferencias: </b> Los consumidores pueden
+              ordenar diferentes combinaciones de bienes según su satisfacción,
+              permitiendo inferir cómo se relacionan los bienes entre sí en
+              términos de utilidad. Este enfoque es útil para representar las
+              elecciones sin necesidad de medir la utilidad en unidades
+              específicas.
+            </p>
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              Enfoque de Utilidad Cardinal
+            </h3>
+            <br />
+            <p className="mb-5">
+              El enfoque de utilidad cardinal, por otro lado, asume que la
+              utilidad puede ser medida y cuantificada en términos absolutos.
+              Esto significa que los consumidores pueden asignar un valor
+              numérico a la satisfacción que obtienen de diferentes niveles de
+              consumo.
+            </p>
+            <p className="mb-5">
+              <b>Escalas de Utilidad: </b> A través de encuestas o experimentos,
+              los investigadores pueden pedir a los consumidores que califiquen
+              su satisfacción de distintos productos en una escala numérica. Por
+              ejemplo, un consumidor podría asignar 10 unidades de utilidad a
+              una pizza y 6 unidades a una hamburguesa. Esto permite calcular la
+              utilidad marginal como la diferencia entre las utilidades totales
+              de diferentes niveles de consumo.
             </p>
             <div className="w-full h-64 my-5 image-fit">
               <img
                 alt="Midone Tailwind HTML Admin Template"
-                src={$f()[0].images[4]}
+                src={
+                  "https://econ.web.uah.es/hpeweb/marg2/Marsheb.JPG"
+                }
                 data-action="zoom"
                 className="w-full rounded-md"
               />
             </div>
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              Cálculo de la Utilidad Marginal
+            </h3>
+            <br />
             <p className="mb-5">
-              Thundercats freegan Truffaut, four loko twee Austin scenester
-              lo-fi seitan High Life paleo quinoa cray. Schlitz butcher ethical
-              Tumblr, pop-up DIY keytar ethnic iPhone PBR sriracha. Tonx direct
-              trade bicycle rights gluten-free flexitarian asymmetrical.
-              Whatever drinking vinegar PBR XOXO Bushwick gentrify. Cliche
-              semiotics banjo retro squid Wes Anderson. Fashion axe dreamcatcher
-              you probably haven't heard of them bicycle rights. Tote bag
-              organic four loko ethical selfies gastropub, PBR fingerstache
-              tattooed bicycle rights.
+              La utilidad marginal UM se calcula como la variación en la
+              utilidad total UT que resulta del consumo de una unidad adicional
+              de un bien. La fórmula es la siguiente: UM=ΔUT/ΔQ
             </p>
             <p className="mb-5">
-              Ugh Portland Austin, distillery tattooed typewriter polaroid pug
-              Banksy Neutra keffiyeh. Shoreditch mixtape wolf PBR&amp;B, tote
-              bag dreamcatcher literally bespoke Odd Future selfies 90's master
-              cleanse vegan. Flannel tofu deep v next level pickled, authentic
-              Etsy Shoreditch literally swag photo booth iPhone pug semiotics
-              banjo. Bicycle rights butcher Blue Bottle, actually DIY semiotics
-              Banksy banjo mixtape Austin pork belly post-ironic. American
-              Apparel gastropub hashtag, McSweeney's master cleanse occupy High
-              Life bitters wayfarers next level bicycle rights. Wolf chia Terry
-              Richardson, pop-up plaid kitsch ugh. Butcher +1 Carles, swag
-              selfies Blue Bottle viral.
+              <b>Ejemplo: </b> Supongamos que un consumidor consume 3 rebanadas
+              de pizza, obteniendo una utilidad total de 30 unidades. Si al
+              consumir la cuarta rebanada, la utilidad total aumenta a 36
+              unidades, la utilidad marginal de la cuarta rebanada sería:
+              <br />
+              UM = 36 - 30 / 1 = 6 unidades de utilidad
             </p>
-            <p className="mb-5">
-              Keffiyeh food truck organic letterpress leggings iPhone four loko
-              hella pour-over occupy, Wes Anderson cray post-ironic. Neutra
-              retro fixie gastropub +1, High Life semiotics. Vinyl distillery
-              Etsy freegan flexitarian cliche jean shorts, Schlitz wayfarers
-              skateboard tousled irony locavore XOXO meh. Ethnic Wes Anderson
-              McSweeney's messenger bag, mixtape XOXO slow-carb cornhole
-              aesthetic Marfa banjo Thundercats bitters. Raw denim banjo
-              typewriter cray Tumblr, High Life single-origin coffee. 90's
-              Tumblr cred, Terry Richardson occupy raw denim tofu fashion axe
-              photo booth banh mi. Trust fund locavore Helvetica, fashion axe
-              selvage authentic Shoreditch swag selfies stumptown +1.
-            </p>
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              Curvas de Utilidad Marginal
+            </h3>
+            <br />
             <div className="w-3/5 h-64 mr-6 float-left image-fit">
               <img
                 alt="Midone Tailwind HTML Admin Template"
-                src={$f()[0].images[3]}
+                src={
+                  "https://www.econlink.com.ar/files/utilidad-marginal-2.png"
+                }
                 data-action="zoom"
                 className="w-full rounded-md"
               />
             </div>
             <p className="mb-5">
-              Scenester chambray slow-carb, trust fund biodiesel ugh bicycle
-              rights cornhole. Gentrify messenger bag Truffaut tousled roof
-              party pork belly leggings, photo booth jean shorts. Austin
-              readymade PBR plaid chambray. Squid Echo Park pour-over, wayfarers
-              forage whatever locavore typewriter artisan deep v four loko.
-              Locavore occupy Neutra Pitchfork McSweeney's, wayfarers
-              fingerstache. Actually asymmetrical drinking vinegar yr brunch
-              biodiesel. Before they sold out sustainable readymade craft beer
-              Portland gastropub squid Austin, roof party Thundercats chambray
-              narwhal Bushwick pug.
+              Gráficamente, la utilidad marginal se representa a menudo mediante
+              una curva que muestra la relación entre la cantidad consumida de
+              un bien y su utilidad marginal. A medida que un consumidor consume
+              más unidades de un bien, la curva de utilidad marginal
+              generalmente se inclina hacia abajo, reflejando la ley de la
+              utilidad marginal decreciente.
             </p>
             <p className="mb-5">
-              Literally typewriter chillwave, bicycle rights Carles flannel
-              wayfarers. Biodiesel farm-to-table actually, locavore keffiyeh
-              hella shabby chic pour-over try-hard Bushwick. Sriracha American
-              Apparel Brooklyn, synth cray stumptown blog Bushwick +1 VHS
-              hashtag. Wolf umami Carles Marfa, 90's food truck Cosby sweater.
-              Fanny pack try-hard keytar pop-up readymade, master cleanse four
-              loko trust fund polaroid salvia. Photo booth kitsch forage
-              chambray, Carles scenester slow-carb lomo cardigan dreamcatcher.
-              Swag asymmetrical leggings, biodiesel Tonx shabby chic ethnic
-              master cleanse freegan.
+              <b>Interpretación Gráfica: </b> En el gráfico, el eje horizontal
+              representa la cantidad consumida, mientras que el eje vertical
+              representa la utilidad marginal. A medida que se consume más del
+              bien, la utilidad marginal disminuye, lo que significa que cada
+              unidad adicional proporciona menos satisfacción que la anterior.
             </p>
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              Métodos Experimentales
+            </h3>
+            <br />
+            <p className="mb-5">
+              En la investigación económica, los métodos experimentales se
+              utilizan para medir la utilidad marginal. A través de experimentos
+              controlados, se pueden observar las decisiones de consumo de los
+              participantes en diferentes escenarios y condiciones.
+            </p>
+            <p className="mb-5">
+              <b>Experimentos de Elección: </b> Los investigadores pueden
+              presentar a los participantes varias opciones de bienes y observar
+              cómo eligen entre ellas, permitiendo inferir las utilidades
+              marginales a partir de sus elecciones. Este método puede ayudar a
+              capturar las preferencias y las utilidades de manera más precisa
+              que las encuestas directas.
+            </p>
+            <h3 className="text-2xl font-medium leading-none mt-3">
+              Limitaciones en la Medición
+            </h3>
+            <br />
+            <p className="mb-5">
+              A pesar de la importancia de la utilidad marginal, su medición
+              presenta algunas limitaciones:
+            </p>
+            <p className="mb-5">
+              <b>Subjetividad: </b> La utilidad es una medida subjetiva, y las
+              preferencias de los consumidores pueden cambiar en diferentes
+              contextos o circunstancias.
+            </p>
+            <p className="mb-5">
+              <b>Dificultad en la Cuantificación: </b>
+              No todos los bienes se pueden dividir fácilmente para medir la
+              utilidad marginal. Por ejemplo, algunos servicios son indivisibles
+              y no pueden ser consumidos en fracciones.
+            </p>
+            <p className="mb-5">
+              <b>Influencias Externas: </b>
+              Factores externos como la publicidad, la cultura o las
+              recomendaciones de amigos pueden influir en las decisiones de
+              consumo y afectar la percepción de la utilidad.
+            </p>
+            <div className="w-full h-64 my-5 image-fit">
+              <img
+                alt="Midone Tailwind HTML Admin Template"
+                src={
+                  "https://mexicoindustry.com/admin/images/notas/2024/01/presenta-el-bajio-una-actividad-economica-creciente-21534.jpg"
+                }
+                data-action="zoom"
+                className="w-full rounded-md"
+              />
+            </div>
+
             <p>
-              Raw denim Banksy shabby chic, 8-bit salvia narwhal fashion axe.
-              Ethical Williamsburg four loko, chia kale chips distillery
-              Shoreditch messenger bag swag iPhone Pitchfork. Viral PBR&amp;B
-              single-origin coffee quinoa readymade, ethical chillwave drinking
-              vinegar gluten-free Wes Anderson kitsch Tumblr synth actually
-              bitters. Butcher McSweeney's forage mlkshk kogi fingerstache.
-              Selvage scenester butcher Shoreditch, Carles beard plaid disrupt
-              DIY. Pug readymade selvage retro, Austin salvia vinyl master
-              cleanse flexitarian deep v bicycle rights plaid Terry Richardson
-              mlkshk pour-over. Trust fund try-hard banh mi Brooklyn, 90's Etsy
-              kogi YOLO salvia.
+              La medición de la utilidad marginal es fundamental para comprender
+              el comportamiento del consumidor y cómo se toman decisiones de
+              consumo. A través de diferentes enfoques y métodos, los
+              economistas pueden inferir cómo los consumidores asignan valor a
+              sus elecciones y cómo esas decisiones afectan la oferta y la
+              demanda en los mercados. A pesar de sus limitaciones, la utilidad
+              marginal sigue siendo un concepto clave en la teoría económica y
+              en el análisis de la conducta del consumidor.
             </p>
+            <br />
           </div>
         </ModalBody>
       </Modal>
