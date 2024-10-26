@@ -6,7 +6,7 @@ import Router from "./router";
 function App() {
   return (
     <RecoilRoot>
-      <BrowserRouter>
+      <BrowserRouter basename="/microeconomia_project">
         <Router />
         <ScrollToTop />
       </BrowserRouter>
