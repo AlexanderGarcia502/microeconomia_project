@@ -16,9 +16,13 @@ import useForm from "../../../hooks/useForm";
 import Clase1 from "./first-partial-clases/Clase1";
 
 const faker = [
-  { fileName: "Clase 1", size: "0 MB", path: "portafolio/first-partial" },
-  { fileName: "Clase 2", size: "0 MB", path: "portafolio/second-partial" },
-  { fileName: "Clase 3", size: "0 MB", path: "portafolio/final-exam" },
+  { fileName: "Clase 1", size: "0 MB", path: "portafolio/first-partial", id: 1 },
+  { fileName: "Clase 2", size: "0 MB", path: "portafolio/second-partial", id: 2 },
+  { fileName: "Clase 3", size: "0 MB", path: "portafolio/final-exam", id: 3 },
+  { fileName: "Clase 4", size: "0 MB", path: "portafolio/final-exam", id: 4 },
+  { fileName: "Clase 5", size: "0 MB", path: "portafolio/final-exam", id: 5 },
+  { fileName: "Clase 6", size: "0 MB", path: "portafolio/final-exam", id: 6 },
+  { fileName: "Clase 7", size: "0 MB", path: "portafolio/final-exam", id: 7 },
 ];
 
 const SecondPartial = () => {
@@ -246,7 +250,7 @@ const SecondPartial = () => {
           )}
         </div>
       </div>
-      <Clase1
+      {openModal === true && classSelected === 1 && <Clase1
         open={openModal}
         onClose={() => setOpenModal(false)}
         classNum={classNum}
@@ -255,7 +259,38 @@ const SecondPartial = () => {
           setIsDownload(true)
           successNotificationToggle();
         }}
-      />
+      />}
+
+      {openModal === true && classSelected === 2 && <Clase2
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        classNum={classNum}
+        onDownload={() => {
+          downloadPDF();
+          setIsDownload(true)
+          successNotificationToggle();
+        }}
+      />}
+      {openModal === true && classSelected === 3 && <Clase3
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        classNum={classNum}
+        onDownload={() => {
+          downloadPDF();
+          setIsDownload(true)
+          successNotificationToggle();
+        }}
+      />}
+      {openModal === true && classSelected === 4 && <Clase4
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        classNum={classNum}
+        onDownload={() => {
+          downloadPDF();
+          setIsDownload(true)
+          successNotificationToggle();
+        }}
+      />}
       {/* END: Page Layout */}
     </>
   );
