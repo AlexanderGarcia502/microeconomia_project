@@ -1,4 +1,4 @@
-import { useRoutes } from "react-router-dom";
+import { BrowserRouter, useRoutes } from "react-router-dom";
 import SideMenu from "../layouts/side-menu/Main";
 import Page1 from "../views/page-1/Main";
 import Page2 from "../views/page-2/Main";
@@ -17,40 +17,40 @@ import FinalExamDictionary from "../components-app/templates/dictionaries/FinalE
 function Router() {
   const routes = [
     {
-      path: "microeconomia_project/",
+      path: "/",
       element: <SideMenu />,
       children: [
         {
-          path: "microeconomia_project/",
+          path: "/",
           element: <Page1 />,
         },
         {
-          path: "microeconomia_project/portafolio/first-partial",
+          path: "/portafolio/first-partial",
           element: <FirstPartial />,
         },
         {
-          path: "microeconomia_project/portafolio/second-partial",
+          path: "/portafolio/second-partial",
           element: <SecondPartial />,
         },
         {
-          path: "microeconomia_project/portafolio/final-exam",
+          path: "/portafolio/final-exam",
           element: <FinalExam />,
         },
 
         {
-          path: "microeconomia_project/glossaries",
+          path: "/glossaries",
           element: <Page2 />,
         },
         {
-          path: "microeconomia_project/glossaries/first-partial",
+          path: "/glossaries/first-partial",
           element: <FirstPartialDictionary />,
         },
         {
-          path: "microeconomia_project/glossaries/second-partial",
+          path: "/glossaries/second-partial",
           element: <SecondPartialDictionary />,
         },
         {
-          path: "microeconomia_project/glossaries/final-exam",
+          path: "/glossaries/final-exam",
           element: <FinalExamDictionary />,
         },
       ],
@@ -69,7 +69,11 @@ function Router() {
     },
   ];
 
-  return useRoutes(routes);
+  return (
+    <BrowserRouter basename="/microeconomia_project">
+      {useRoutes(routes)}
+    </BrowserRouter>
+  );
 }
 
 export default Router;
