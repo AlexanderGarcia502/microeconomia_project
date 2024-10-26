@@ -1,7 +1,7 @@
 {
   "name": "tinker-react",
   "version": "0.0.0",
-  "homepage": "https://AlexanderGarcia502.github.io/microeconomia_project/dist",
+  "homepage": "https://alexandergarcia502.github.io/microeconomia_project",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
