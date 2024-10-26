@@ -69,11 +69,10 @@ const FirstPartial = () => {
     const doc = new jsPDF();
 
     // Agregar texto al PDF
-    doc.text("Hola, este es un PDF generado en React.", 10, 10);
-
+    doc.text("YA NO ME DIO TIEMPO PASAR LAS CLASES A PDF, LO SIENTO :( ", 10, 10);
+    
     // Puedes agregar más contenido, por ejemplo, otra línea
-    doc.text("Este es otro párrafo en el PDF.", 10, 20);
-
+    
     // Guardar el PDF con un nombre específico
     doc.save("sample.pdf"); // Nombre del archivo PDF
   };
